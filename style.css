@@ -1,0 +1,81 @@
+/* Colours */
+:root{
+  --green: #00887A;
+  --beige: #FFCCBC;
+  --white: #FFFFFF;
+  --lightblue: #D3E3FC;
+  --blue: #77A6F7;
+}
+.blue-bg{background: var(--blue);}
+.lightblue-bg{background: var(--lightblue);}
+.green-bg{background: var(--green);}
+.beige-bg{background: var(--beige);}
+.white-bg{background: var(--white);}
+
+
+.blue-text{color: var(--blue);}
+.lightblue-text{color: var(--lightblue);}
+.green-text{color: var(--green);}
+.beige-text{color: var(--beige);}
+.white-text{color: var(--white);}
+.brown-text{color: #8B4513;}
+
+.bebas{
+  font-family: 'Bebas Neue', cursive;
+}
+
+.belgrano{
+  font-family: 'Belgrano', serif;
+}
+
+p{
+  font-family: 'Belgrano', serif;
+}
+
+.img-max {
+  max-width: 300px;
+  width:100%;
+}
+
+.img-max-height{
+  max-height: 200px;
+  height: 100%;
+}
+
+.my-brand{
+  font-size: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+
+}
+
+.nav-link {
+  margin-left: 5px;
+  margin-right: 5px;
+  color:var(--green);
+}
+
+.nav-link:hover{
+
+  border-bottom: 5px solid var(--green);
+  transition: 0.5s ease;
+}
+.intro{
+    background-image:url("humanbeans.jpg");
+    background-size: auto 100vh;
+    background-attachment: fixed;
+    transition: transform 0.5s ease-in-out;
+}
+
+.intro-row h1{
+  font-size: 5em;
+  border-bottom: 5px solid var(--green);
+}
+
+.about-row h1{
+  font-size: 5em;
+}
+
+.hobbies-row-1 h1{
+  font-size: 5em;
+}
