@@ -88,6 +88,10 @@ p{
   border-bottom: 5px solid var(--green);
 }
 
+.list-inline-item:hover{
+  color: var(--beige);
+}
+
 .work-date{
   font-style: italic;
   color: var(--lightblue);
