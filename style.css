@@ -19,6 +19,7 @@
 .beige-text{color: var(--beige);}
 .white-text{color: var(--white);}
 .brown-text{color: #8B4513;}
+.grey-text{color: #3c464d;}
 
 .bebas{
   font-family: 'Bebas Neue', cursive;
@@ -26,6 +27,21 @@
 
 .belgrano{
   font-family: 'Belgrano', serif;
+}
+
+h1{
+  font-size: 5em;
+  font-family: 'Bebas Neue', cursive;
+}
+
+h2{
+  font-size: 2.5em;
+  font-family: 'Bebas Neue', cursive;
+}
+
+h3{
+  font-size: 2em;
+  font-family: 'Bebas Neue', cursive;
 }
 
 p{
@@ -72,10 +88,15 @@ p{
   border-bottom: 5px solid var(--green);
 }
 
-.about-row h1{
-  font-size: 5em;
+.work-date{
+  font-style: italic;
+  color: var(--lightblue);
 }
 
-.hobbies-row-1 h1{
-  font-size: 5em;
+.btn-success{
+  background: var(--green);
+}
+
+.btn-success:hover{
+  background: #00665c;
 }
