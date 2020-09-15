@@ -100,3 +100,12 @@ p{
 .btn-success:hover{
   background: #00665c;
 }
+
+.btn-outline-success{
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+.btn-outline-success:hover{
+  background: #00665c;
+}

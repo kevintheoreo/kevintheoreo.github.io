@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Deshackle Project</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c554a7ab0e.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  </head>
+  <body class="beige-bg">
+    <div class="container">
+      <div class="jumbotron bg-white">
+        <h1>My Final Year Project:</h1>
+        <h1>Deshackle Android App</h1>
+        <a href="index.html" class="btn btn-outline-success my-3">Return Home</a>
+      </div>
+
+      <div class="jumbotron bg-white">
+        <h2 class="py-3">How I chose this project</h2>
+        <div style="font-style:italic">
+          <p>Growing up, social anxiety was one of the factors that crippled my ability to live the life that I
+            want. This included the ability to make friends, communicate with teachers which not only made me
+            unhappy due to the fact that I lack social interaction but also resulted in me lacking the resources I
+            need to study productively and grow as a person. Over the years, I managed to tackle this problem to
+            an extent through experimentation but that left me wondering about the people who had it worse than
+            me, considering that mine was just mild social anxiety. I found out that one of the largest mental
+            healthcare problem in the world is Social Anxiety Disorder and should be taken seriously as it affects
+            all areas of a person’s life. Despite its significance, there are still no concrete solutions to solve it and
+            thus I would like to research on this area and possibly come up with a product that could help
+            overcome the problem of Social Anxiety Disorder.
+          </p>
+        </div>
+      </div>
+
+      <div class="jumbotron bg-white">
+        <h2 class="py-3">Aim of Project</h2>
+        <div style="font-style:italic">
+          <p>The aim of my project was to create an android application that could help replace current treatments
+           for Social Anxiety Disorder(SAD). This treatments include Cognitive Behaviour Therapy(CBT) sessions, medication
+          Graded Self-exposure, etc. All of these treatment methods comes with its pros and cons, thus I would combine elements
+         of the current treatment methods together with gamification and the convenience of smartphone technology to help users.</p>
+        </div>
+      </div>
+
+      <div class="jumbotron bg-white">
+        <h2 class="py-3">What my application does</h2>
+        <div style="font-style:italic">
+          <p>The Deshackle app generates a list of social challenges for the user depending on what level they have set for themselves.
+           When user selects a challenge, they are given the choice to Defeat, Call An Ally or Forfeit. By selecting defeat, they can
+          submit a tip into the database on how they managed to finish the challenge. If users select Call An Ally, they can retrieve a
+        randomly generated tip given by other users for that challenge. When user selects forfeit, they give up the challenge. By completing
+       challenges, users can earn points which can be used to make in-app purchases such as downloadable wallpapers. There is also a feature called
+      training grounds which is a bunch of self-help articles that help users gain confidence in completing the challenges.</p>
+          <p>Example of challenges:</p>
+          <ul class="list-group">
+            <li class="list-group-item">Level 1: Practice good posture, head up, shoulders back. Walk slowly and purposefully.</li>
+            <li class="list-group-item">Level 2: Speak with a person you see often. (E.g. Receptionist at work)</li>
+            <li class="list-group-item">Level 2: Call up a company and make enquiries.</li>
+            <li class="list-group-item">Level 3: Go to a "meet-up" group on your own and talk to people.</li>
+          </ul>
+          </div>
+        </div>
+
+        <div class="jumbotron bg-white">
+          <h2 class="py-3">UML Diagrams</h2>
+          <h3>Use Case Diagram</h3>
+          <img class="img-fluid" src="usecase.png" alt="Use Case Diagram">
+          <h3>Activity Diagram</h3>
+          <img class="img-fluid" src="activity.png" alt="Activity Diagram">
+        </div>
+
+        <div class="jumbotron bg-white">
+          <h2 class="py-3">Database Structure</h2>
+          <div style="font-style:italic">
+            <p>I needed a database to store the challenge tips that users submit and retrieve.
+             The database that I chose is Firebase's Cloud Firestore. This is a flexible and
+             scalable NoSQL cloud database. Cloud Firestore data model can consist of only collections and documents where collections
+             are a group of documents. Documents can contain as many fields which are key-pair values and these
+             values can contain basic data types such as Strings, Integers, Booleans and Arrays. However each
+             document can only hold up to 1MB of data. Another feature of documents is that it can also be linked
+             to another collection. This means that nested collections can be made to store more documents under a
+             document. For my project, I would need a collection to store “Challenge” documents which will hold the
+             field “challengeName: String” which is the challenge String display that users will see. For storing
+             “Tips”, I can either store it as a String array within the “Challenge” document, or I can create a new
+             collection called “Tips” and link it to the “Challenge” document. Since each document can only hold up
+             to 1MB of data, I will not store as String array as it might present a problem when there are multiple
+             users which in turn lead to many tips being created that might hit the size limit. In order to prevent this, I
+             created a “Tips” collection under the “Challenge” document. This means that for each “Challenge”
+             document, it is linked to a collection of “Tip” documents for that challenge which users can created in
+             the application. This “Tip” document will have the field “tipName: String” which is the String that users
+             store in Defeat activity or retrieve in Call Ally activity.
+            </p>
+            <img class="img-fluid" src="firestore.png" alt="Database Structure Diagram">
+          </div>
+        </div>
+
+        <div class="jumbotron bg-white">
+          <h2 class="py-3">Product Screenshots</h2>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <img class="img-fluid my-3" src="ss1.jpg" alt="ss1.jpg">
+            </div>
+            <div class="col-12 col-md-4">
+              <img class="img-fluid my-3" src="ss2.jpg" alt="ss2.jpg">
+            </div>
+            <div class="col-12 col-md-4">
+              <img class="img-fluid my-3" src="ss3.jpg" alt="ss3.jpg">
+            </div>
+            <div class="col-12 col-md-4">
+              <img class="img-fluid my-3" src="ss4.jpg" alt="ss4.jpg">
+            </div>
+            <div class="col-12 col-md-4">
+              <img class="img-fluid my-3" src="ss5.jpg" alt="ss5.jpg">
+            </div>
+            <div class="col-12 col-md-4">
+              <img class="img-fluid my-3" src="ss6.jpg" alt="ss6.jpg">
+            </div>
+            <div class="col-12 col-md-4">
+              <img class="img-fluid my-3" src="ss7.jpg" alt="ss7.jpg">
+            </div>
+            <div class="col-12 col-md-4">
+              <img class="img-fluid my-3" src="ss8.jpg" alt="ss8.jpg">
+            </div>
+            <div class="col-12 col-md-4">
+              <img class="img-fluid my-3" src="ss9.jpg" alt="ss9.jpg">
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </body>
+</html>
