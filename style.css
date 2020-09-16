@@ -53,6 +53,15 @@ p{
   width:100%;
 }
 
+.img-max-200 {
+  max-width: 200px;
+  width:100%;
+}
+
+.img-round {
+  border-radius: 50% !important;
+}
+
 .img-max-height{
   max-height: 200px;
   height: 100%;
@@ -77,16 +86,32 @@ p{
   transition: 0.5s ease;
 }
 .intro{
-    background-image:url("humanbeans.jpg");
-    background-size: auto 100vh;
-    background-attachment: fixed;
+    background: url("mccall-alexander-unsplash.jpg") no-repeat fixed center/cover;
     transition: transform 0.5s ease-in-out;
 }
 
-.intro-row h1{
+/* .intro::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7)0%,
+    rgba(0, 0, 0, 0.5)50%,
+    rgba(0, 0, 0, 0.1)100%
+  );
+} */
+
+/* .intro .intro-row{
+  z-index: 10;
+} */
+
+/* .intro-row img{
   font-size: 5em;
   border-bottom: 5px solid var(--green);
-}
+} */
 
 .list-inline-item:hover{
   color: var(--beige);
