@@ -53,6 +53,12 @@ p{
   width:100%;
 }
 
+.img-max-brand {
+  max-width: 26px;
+  width:100%;
+  margin-bottom: 3px;
+}
+
 .img-max-200 {
   max-width: 200px;
   width:100%;
