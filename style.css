@@ -86,7 +86,8 @@ p{
   transition: 0.5s ease;
 }
 .intro{
-    background: url("mccall-alexander-unsplash.jpg") no-repeat fixed center/cover;
+    background-color: var(--lightblue) !important;
+    background: url("images/mccall-alexander-unsplash.jpg") no-repeat fixed center/cover;
     transition: transform 0.5s ease-in-out;
 }
 
