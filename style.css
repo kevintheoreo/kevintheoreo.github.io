@@ -90,29 +90,6 @@ p{
     transition: transform 0.5s ease-in-out;
 }
 
-/* .intro::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.7)0%,
-    rgba(0, 0, 0, 0.5)50%,
-    rgba(0, 0, 0, 0.1)100%
-  );
-} */
-
-/* .intro .intro-row{
-  z-index: 10;
-} */
-
-/* .intro-row img{
-  font-size: 5em;
-  border-bottom: 5px solid var(--green);
-} */
-
 .list-inline-item:hover{
   color: var(--beige);
 }
@@ -137,4 +114,14 @@ p{
 
 .btn-outline-success:hover{
   background: #00665c;
+}
+
+#contact-jumbo{
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: white;
+  border-radius: 5px;
+  max-width: 600px;
 }
