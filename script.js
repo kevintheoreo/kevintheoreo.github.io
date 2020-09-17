@@ -32,7 +32,7 @@
             if(hash !== "#contact"){
               $('html, body').animate({
                 scrollTop: $(hash).offset().top -70
-              }, 800, function(){
+              }, 400, function(){
               });
             }
 
