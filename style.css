@@ -131,6 +131,12 @@ p{
   background: #00665c;
 }
 
+.contact{
+    background-color: var(--lightblue) !important;
+    background: url("images/sg-skyscrapers2.jpg") no-repeat fixed center/cover;
+    transition: transform 0.5s ease-in-out;
+}
+
 #contact-jumbo{
   margin-left: 30px;
   margin-right: 30px;
