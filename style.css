@@ -153,6 +153,16 @@ p {
   background: #00665c;
 }
 
+.btn-outline-light {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-outline-light:hover {
+  background: white;
+  color: var(--green);
+}
+
 .contact {
   background-color: var(--lightblue) !important;
   background: url("images/gbtb.jpg") no-repeat fixed center/cover;
