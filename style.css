@@ -127,6 +127,10 @@ p {
   margin-right: auto;
 }
 
+.design-image {
+  text-align: center;
+}
+
 .list-inline-item:hover {
   color: var(--beige);
 }
